@@ -1,40 +1,65 @@
+body {
+    background-color: #f2e8d5;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin: 0 auto;
+    max-width: none;
+}
+
 a:link {
     text-decoration: none;
 }
 
-nav img {
-    width: 10vw;
-    height: 3vw;
+/*-------nav. menu---------*/
+
+header {
+    background: #403f3d;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
-nav a:active {
-    color: brown;
+/* unvisited link */
+header nav a:link {
+    color: #F2F2F2;
 }
 
-nav a:visited {
-    color: white;
+/* mouse over link */
+header nav a:hover {
+    color: #f2e8d5;
 }
 
-nav {
-    background-color: black;
-    color: white;
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-}
-
-nav a {}
-
-nav a:hover {
-    transform: scale(1.2);
-}
-
-body {
-    margin: 0px;
-    background-color: antiquewhite;
+/* selected link */
+header nav a:active {
+    color: #f2e8d5;
 }
 
 
+.hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#menuknap {
+    display: inline-block;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top left;
+    background-color: #403f3d;
+    color: #403f3d;
+
+}
 
 .knap a {
     padding: 10px;
@@ -52,13 +77,13 @@ body {
     color: brown;
 }
 
+
 #splash {
     width: 100vw;
     height: 20vw;
     background-size: cover;
     background-image: url(images/splashbillede.png);
 }
-
 
 
 #forside .sectionwrapper {
@@ -74,8 +99,6 @@ body {
     margin-top: 50px;
 
 }
-
-
 
 
 
@@ -171,4 +194,21 @@ footer img:hover {
 footer p {
     color: white;
 
+}
+
+/*-----------store skærme------------*/
+@media only screen and (min-width: 600px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
 }

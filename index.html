@@ -5,20 +5,27 @@
     <title>Forside</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Kanit|Lato" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <nav>
-        <a href="http://www.crossfitdeltakilo.dk/"> <img src="images/logo.png">
-        </a>
-        <a href="index.html">FORSIDE</a>
-        <a href="medlemskab.html">OM OS</a>
-        <a href="medlemskab.html">TRÆNING</a>
-        <a href="medlemskab.html">MEDLEMSKAB</a>
+    <header>
+        <!a href="http://www.crossfitdeltakilo.dk/">
+            <!img src="images/logo.png">
+                <nav>
+                    <div id="menuknap">☰</div>
+                    <ul id="menu" class="hidden">
+                        <li><a href="index.html">FORSIDE</a></li>
+                        <li><a href="omos.html">OM OS</a></li>
+                        <li><a href="traening.html">TRÆNING</a></li>
+                        <li><a href="medlemskab.html">MEDLEMSKAB</a></li>
+                    </ul>
 
-    </nav>
+                </nav>
+    </header>
+
 
     <section id="splash">
         <div class="sectionwrapper">
@@ -49,13 +56,7 @@
 
             <div id="video-container">
                 <video id="video" width="640" height="365">
-                    <source src="test.mp4" type="video/mp4">
-                    <!--
-                    <p>4
-                        Your browser doesn't support HTML5 video.
-                        <a href="videos/mikethefrog.mp4">Download</a> the video instead.
-                    </p>
--->
+                    <source src="video/finaleDeltavideo.mp4" type="video/mp4">
                 </video>
 
                 <div id="video-controls">
@@ -88,7 +89,5 @@
 
 
     </footer>
-
-    <script src="script.js"></script>
 
 </body></html>
