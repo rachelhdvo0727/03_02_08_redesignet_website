@@ -1,8 +1,7 @@
 body {
     background-color: #f2e8d5;
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
+    font-size: 62.5%;
 }
 
 img {
@@ -40,7 +39,7 @@ footer {
 
 .footer_txt {
     text-align: start;
-    margin: 1.5vw;
+    margin: 1vw;
     padding: 0.5vw;
     flex-grow: 1;
     flex-basis: 50px;
@@ -64,7 +63,7 @@ nav a {
     padding: 0.2rem;
     margin: 0.4rem;
     font-family: 'Lato', sans-serif;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 /* unvisited link */
@@ -108,11 +107,11 @@ header nav a:active {
 .bar1,
 .bar2,
 .bar3 {
-    width: 2.5em;
-    height: 0.4em;
+    width: 2.4rem;
+    height: 0.4rem;
     background-color: #F2F2F2;
-    margin: 0.2em 0;
-    border-radius: 5vw;
+    margin: 0.2rem;
+    border-radius: 4rem;
 }
 
 .hidden {
@@ -140,51 +139,57 @@ header nav a:active {
 p {
     font-family: 'Lato', sans-serif;
     color: #010d00;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 h1 {
     font-family: 'Black Ops One', cursive;
     color: #5e8c88;
+    font-size: 2rem;
 }
 
 footer h6 {
     font-family: 'Lato', sans-serif;
     color: #F2F2F2;
-    font-size: 0.9em;
+    font-size: 0.7rem;
 }
 
 footer p {
-    text-indent: 0.7em;
+    text-indent: 4vw;
     font-family: 'Lato', sans-serif;
     color: #F2F2F2;
-    font-size: 0.8em;
+    font-size: 0.7rem;
 }
 
 /*---------knap------------*/
 
 .knap a {
     font-family: 'Lato', sans-serif;
-    font-size: 1.2vw;
+    font-size: 2.9vw;
     color: #F2F2F2;
     text-decoration: none;
 }
 
+.knap_sprite {
+    padding: 1vw;
+    text-align: center;
+}
+
 .knap {
-    width: 8vw;
-    height: 3vw;
+    width: 16vw;
+    height: 6vw;
     background-color: #400101;
     border-radius: 1vw;
-    margin-left: 25vw;
-    padding: 0.2vw;
-    text-align: center;
+    padding: 1vw;
+    margin-left: 51vw;
 }
 
 .knap a:hover {
     color: brown;
 }
 
-/*---------------Indhold-------------*/
+/*------------------------Indhold----------------------------*/
+/*---------------Forside-------------*/
 #splash {
     width: 100vw;
     height: 20vw;
@@ -192,33 +197,36 @@ footer p {
     background-image: url(images/splashbillede.png);
 }
 
-#forside,
+#forside {
+    flex-flow: flex wrap;
+    padding: 0.5rem;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
 #forside .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
 }
 
-.txt {
+#forside .txt {
     flex-basis: 400px;
     flex-grow: 2;
     margin: 2.5vw;
     padding: 1vw;
-    word-break: break-all;
 }
 
-.video {
+#forside .video {
     flex-basis: 150px;
     flex-grow: 1;
-    margin: 2.5vw;
 }
 
-.video_container {
+#forside .video_container {
     width: 640px;
     height: 365px;
     position: relative;
 }
 
-.video_controls {
+#forside .video_controls {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -257,8 +265,20 @@ button:hover {
     width: 60px;
 }
 
-#medlemskab .sectionwrapper h1 {
-    display: flex;
+/*---------------Medlemskab-------------*/
+
+#medlemskab {
+    flex-flow: flex wrap;
+    padding: 0.5rem;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
+#medlemskab .sectionwrapper {
+    flex-flow: flex wrap;
+}
+
+#container {
+    flex-flow: flex wrap;
     justify-content: center;
 }
 
@@ -266,9 +286,8 @@ button:hover {
     display: inline-block;
     width: 20vw;
     height: 15vw;
-    margin-right: 2vw;
-    background-color: darkred;
-
+    margin: 1.2vw;
+    background-color: #400101;
 }
 
 
@@ -288,6 +307,29 @@ button:hover {
 
     #menu li {
         display: inline-block;
-        font-size: 1em;
+        font-size: 1rem;
+    }
+
+    .knap a {
+        font-size: 1rem;
+    }
+
+    .knap_sprite {
+        padding: 0.7vw;
+    }
+
+    .knap {
+        width: 8vw;
+        height: 3vw;
+        margin-left: 25vw;
+        padding: 0.2rem;
+    }
+
+    footer h6 {
+        font-size: 0.8rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
     }
 }
