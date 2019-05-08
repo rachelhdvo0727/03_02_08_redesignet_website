@@ -25,6 +25,11 @@ header {
     top: 0;
 }
 
+nav a {
+    padding: 0.2rem;
+    margin: 0.4rem;
+}
+
 /* unvisited link */
 header nav a:link {
     color: #F2F2F2;
@@ -42,25 +47,58 @@ header nav a:active {
 
 
 .hidden {
-    /*    display: none;*/
-    /*    transform: scale(0);*/
     transform: translateX(-100%);
     opacity: 0;
 }
 
+
 #menuknap {
+    position: absolute;
     display: inline-block;
+    cursor: pointer;
+}
+
+.pos {
+    top: 0vw;
+    right: 2vw;
 }
 
 #menu {
     list-style-type: none;
     transition: transform .3s;
-    transform-origin: top left;
-    background-color: #403f3d;
+    transform-origin: right;
+    background-color: #5e8c88;
     color: #403f3d;
-
 }
 
+.bar1,
+.bar2,
+.bar3 {
+    width: 2.5em;
+    height: 0.4em;
+    background-color: #F2F2F2;
+    margin: 6px 0;
+    border-radius: 5vw;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+/*---------knap------------*/
 .knap a {
     padding: 10px;
     font-weight: bold;
@@ -201,6 +239,7 @@ footer p {
 
     #menuknap {
         display: none;
+        background-color: #5e8c88;
     }
 
     #menu.hidden {
