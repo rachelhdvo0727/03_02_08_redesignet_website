@@ -64,12 +64,17 @@ nav a {
     padding: 0.2rem;
     margin: 0.4rem;
     font-family: 'Lato', sans-serif;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 /* unvisited link */
 header nav a:link {
     color: #F2F2F2;
+}
+
+/*visited*/
+header nav a:visited {
+    color: #5e8c88;
 }
 
 /* mouse over link */
@@ -106,7 +111,7 @@ header nav a:active {
     width: 2.5em;
     height: 0.4em;
     background-color: #F2F2F2;
-    margin: 6px 0;
+    margin: 0.2em 0;
     border-radius: 5vw;
 }
 
@@ -157,16 +162,22 @@ footer p {
 }
 
 /*---------knap------------*/
+
 .knap a {
-    padding: 10px;
-    font-weight: bold;
-    font-size: 1.4em;
-    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2vw;
+    color: #F2F2F2;
     text-decoration: none;
+}
+
+.knap {
+    width: 8vw;
+    height: 3vw;
+    background-color: #400101;
+    border-radius: 1vw;
+    margin-left: 25vw;
+    padding: 0.2vw;
     text-align: center;
-    border: 4px solid white;
-    width: 160px;
-    margin-left: 200px;
 }
 
 .knap a:hover {
@@ -187,13 +198,18 @@ footer p {
     flex-wrap: wrap;
 }
 
-.txt,
-.video {
-    flex-basis: 300px;
-    flex-grow: 1;
+.txt {
+    flex-basis: 400px;
+    flex-grow: 2;
     margin: 2.5vw;
     padding: 1vw;
     word-break: break-all;
+}
+
+.video {
+    flex-basis: 150px;
+    flex-grow: 1;
+    margin: 2.5vw;
 }
 
 .video_container {
@@ -272,6 +288,6 @@ button:hover {
 
     #menu li {
         display: inline-block;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }
