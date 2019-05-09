@@ -1,5 +1,5 @@
 body {
-    background-color: #F2F2F2;
+    background-color: #f2e8d5;
     margin: 0 auto;
 }
 
@@ -39,13 +39,11 @@ header {
 .facebook img {
     height: 4.4vw;
     width: 4.4vw;
-
 }
 
 .sociale_media img:hover {
     transform: scale(1.3);
 }
-
 
 footer {
     /*position: sticky;*/
@@ -138,7 +136,6 @@ header nav a:active {
 .hidden {
     transform: translateX(100%);
     opacity: 0;
-
 }
 
 /* Rotate first bar */
@@ -158,7 +155,7 @@ header nav a:active {
 
 
 
-/*---------fonts------------*/
+/*---------------fonts------------*/
 }
 
 .boks p {
@@ -182,14 +179,8 @@ header nav a:active {
 h1,
 h2 {
     font-family: 'Black Ops One', cursive;
-    color: #24969a;
+    color: #5e8c88;
     font-size: 5vw;
-}
-
-#traening h2 {
-    font-family: 'Black Ops One', cursive;
-    color: #24969a;
-    font-size: 4vw;
 }
 
 #medlemskab h4 {
@@ -228,22 +219,23 @@ footer p {
 
 .knap a {
     font-family: 'Lato', sans-serif;
-    font-size: 2.9vw;
+    font-size: 2.5vw;
     color: #F2F2F2;
-    align-self: center;
 }
 
 .knap_sprite {
-    padding: 0.2vw;
+    width: 16vw;
+    height: 4vw;
+    padding: 0.4vw;
     text-align: center;
+    cursor: pointer;
 }
 
 .knap {
     width: 16vw;
-    height: 6vw;
+    height: 5vw;
     background-color: #400101;
     border-radius: 1vw;
-    padding: 1vw;
     margin-left: 51vw;
 }
 
@@ -260,6 +252,7 @@ footer p {
 .buyknap_sprite {
     padding: 0.2vw;
     text-align: center;
+    cursor: pointer;
 }
 
 .buy_knap {
@@ -286,8 +279,8 @@ footer p {
 
 #forside {
     flex-flow: flex wrap;
-    padding: 0.5rem;
-    margin: 3rem 2rem 3rem 2rem;
+    padding: 0.5vw;
+    margin: 3vw;
 }
 
 #forside .sectionwrapper {
@@ -325,9 +318,14 @@ footer p {
     transition: opacity .3s;
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(94, 140, 136, 1) 70%);
+    background-image: -webkit-gradient(linear,
+        left bottom,
+        left top,
+        color-stop(0.13, rgb(3, 113, 168)),
+        color-stop(1, rgb(0, 136, 204)));
 }
 
-.video:hover .video_controls {
+.video_container:hover .video_controls {
     opacity: .9;
 }
 
@@ -335,10 +333,6 @@ button {
     background: rgba(0, 0, 0, .5);
     border: 0;
     color: #EEE;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
     border-radius: 3px;
 }
 
@@ -359,12 +353,12 @@ button:hover {
 #omos {
     flex-flow: flex wrap;
     padding: 0.5rem;
-    margin: 3rem 2rem 3rem 2rem;
+    margin: 2.5vw;
 }
 
 #omos .txt {
-    margin: 2vw;
-    padding: 1vw;
+    margin: 1.8vw;
+    padding: 0.8vw;
     font-family: 'Lato', sans-serif;
     color: #010d00;
     font-size: 2.2vw;
@@ -412,12 +406,11 @@ button:hover {
 }
 
 #omos .profil {
-    width: 45vw;
-    height: 50vw;
+    width: 35vw;
     margin: 1.5vw;
     background-color: #400101;
     padding: 2vw;
-    text-overflow: clip;
+    text-overflow: ellipsis;
     flex: 0 0 auto;
 }
 
@@ -428,7 +421,7 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0.5rem;
-    margin: 3rem 2rem 3rem 2rem;
+    margin: 3vw;
 }
 
 #medlemskab .sectionwrapper {
@@ -472,9 +465,27 @@ button:hover {
 #traening {
     flex-flow: flex wrap;
     padding: 0.5rem;
-    margin: 3rem 2rem 3rem 2rem;
+    margin: 3vw;
 }
 
+/*----------------Animation---------------*/
+.zoom_in {
+    animation-name: zoom_in_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes zoom_in_kf {
+    0% {
+
+        transform: scale (0.5, 0.5);
+    }
+
+    100% {
+        transform: scale(8, 8);
+    }
+}
 
 /*-----------store skærme------------*/
 @media only screen and (min-width: 600px) {
@@ -505,34 +516,36 @@ button:hover {
         display: flex;
         width: 10%;
         margin-left: 0px;
-
     }
 
     .sociale_media img {
         height: 2vw;
         width: 2vw;
         display: flex;
-
     }
 
     .facebook img {
         height: 2.2vw;
         width: 2.2vw;
-
     }
 
-    .knap a,
     .buy_knap a {
         font-size: 0.5vw;
     }
 
+    .knap a {
+        font-size: 1.4vw;
+    }
+
     .knap_sprite {
-        padding: 0.7vw;
+        width: 9vw;
+        height: 1.5vw;
+        padding: 0.4vw;
     }
 
     .knap {
-        width: 8vw;
-        height: 2vw;
+        width: 10vw;
+        height: 3vw;
         margin-left: 25vw;
         padding: 0.2rem;
     }
@@ -563,11 +576,11 @@ button:hover {
     }
 
     footer h6 {
-        font-size: 0.8rem;
+        font-size: 1.5vw;
     }
 
     footer p {
-        font-size: 0.8rem;
+        font-size: 1.3vw;
     }
 
     h1,

@@ -6,6 +6,8 @@ function sidenVises() {
     //burgermenu
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
+    //medlemskab animation
+    var medlemboks = document.querySelector(".boks");
     // Video
     var video = document.querySelector("#video");
 
@@ -17,6 +19,8 @@ function sidenVises() {
     // Sliders
     var seekBar = document.querySelector("#seek-bar");
     var volumeBar = document.querySelector("#volume-bar");
+
+    //Event listerner for medlemskabs bokser
 
     // Event listener for the play/pause button
     playButton.addEventListener("click", playVideo);
