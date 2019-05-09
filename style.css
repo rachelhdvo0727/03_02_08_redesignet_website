@@ -129,7 +129,7 @@ header nav a:active {
     cursor: pointer;
 }
 
-.pos {
+.pos_m {
     top: 1vw;
     right: 2vw;
 }
@@ -174,11 +174,24 @@ header nav a:active {
 }
 
 /*---------fonts------------*/
+}
+
+.boks p {
+    text-indent: 0.3vw;
+    font-size: 0.8rem;
+}
 
 p {
     font-family: 'Lato', sans-serif;
     color: #010d00;
-    font-size: 1rem;
+    font-size: 1vw;
+}
+
+#medlemskab p {
+    font-family: 'Lato', sans-serif;
+    color: #F2F2F2;
+    text-align: left;
+    font-size: 2.3vw;
 }
 
 h1 {
@@ -187,16 +200,23 @@ h1 {
     font-size: 2rem;
 }
 
-h2 {
+#medlemskab h4 {
     font-family: 'Black Ops One', cursive;
     color: #5e8c88;
-    font-size: 1.5rem;
+    font-size: 2vw;
+    text-align: left;
 }
 
-h3 {
+#medlemskab h2 {
     font-family: 'Black Ops One', cursive;
     color: #5e8c88;
-    font-size: 1.2rem;
+    font-size: 3.2vw;
+}
+
+#medlemskab h3 {
+    font-family: 'Black Ops One', cursive;
+    color: #5e8c88;
+    font-size: 2.5vw;
 }
 
 footer h6 {
@@ -212,13 +232,12 @@ footer p {
     font-size: 0.7rem;
 }
 
-/*---------knap------------*/
+/*---------knapper------------*/
 
 .knap a {
     font-family: 'Lato', sans-serif;
     font-size: 2.9vw;
     color: #F2F2F2;
-    text-decoration: none;
 }
 
 .knap_sprite {
@@ -239,8 +258,27 @@ footer p {
     color: brown;
 }
 
+.buy_knap a {
+    font-family: 'Lato', sans-serif;
+    font-size: 2vw;
+    color: #400101;
+}
+
+.buyknap_sprite {
+    padding: 0.2vw;
+    text-align: center;
+}
+
+.buy_knap {
+    width: 10vw;
+    height: 3vw;
+    background-color: #F2F2F2;
+    border-radius: 1vw;
+    padding: 0.8vw;
+}
+
 /*------------------------Indhold----------------------------*/
-/*---------------Forside-------------*/
+
 #splash {
     width: 100vw;
     height: 20vw;
@@ -254,6 +292,7 @@ footer p {
     margin: 3rem 2rem 3rem 2rem;
 }
 
+/*---------------Forside-------------*/
 #forside .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -328,46 +367,75 @@ button:hover {
     width: 60px;
 }
 
-/*---------------Medlemskab-------------*/
 
-#medlemskab {
+/*------------Om os-----------*/
+#omos {
     flex-flow: flex wrap;
     padding: 0.5rem;
     margin: 3rem 2rem 3rem 2rem;
-
-
 }
 
-#medlemskab .sectionwrapper {
+#omos .sectionwrapper {
     flex-flow: flex wrap;
 }
 
-#medlemskab .container2 {
+#omos .top {
+    margin: 3vw;
+    padding: 0.5vw;
+    /*child flex*/
+    flex-grow: 1;
+    flex-basis: 300px;
+    /*parent flex*/
     display: flex;
+    justify-content: space-between;
+}
+
+/*---------------Medlemskab-------------*/
+
+#medlemskab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
+#medlemskab .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-#medlemskab h1 {
+#medlemskab .container {
+    /*child flex
+    flex-grow: 1;
+    flex-basis: 50px;
+    /*parent flex*/
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-
-#medlemskab p {
-    color: white;
 }
 
 .boks {
-    display: inline-block;
-    width: 20vw;
-    height: 20vw;
-    margin: 1.2vw;
+    width: 43vw;
+    height: 43vw;
+    margin: 1.5vw;
     background-color: #400101;
     vertical-align: top;
-    padding-left: 8px;
-    text-align: center;
+    padding: 2vw;
+
 }
 
-
+.pos1,
+.pos2,
+.pos3,
+.pos4,
+.pos5,
+.pos6,
+.pos7 {
+    margin-top: 0vw;
+    margin-left: 15vw;
+}
 
 /*-----------store skærme------------*/
 @media only screen and (min-width: 600px) {
@@ -387,7 +455,8 @@ button:hover {
         font-size: 1rem;
     }
 
-    .knap a {
+    .knap a,
+    .buy_knap a {
         font-size: 1rem;
     }
 
@@ -402,11 +471,51 @@ button:hover {
         padding: 0.2rem;
     }
 
+    .buy_knap {
+        width: 8vw;
+        height: 1vw;
+    }
+
+    .boks {
+        display: inline-block;
+        width: 25vw;
+        height: 25vw;
+        margin: 1vw;
+        vertical-align: top;
+    }
+
+    .pos1,
+    .pos2,
+    .pos3,
+    .pos4,
+    .pos5,
+    .pos6,
+    .pos7 {
+        margin-top: 6vw;
+        margin-left: 8vw;
+    }
+
     footer h6 {
         font-size: 0.8rem;
     }
 
     footer p {
         font-size: 0.8rem;
+    }
+
+    #medlemskab p {
+        font-size: 1vw;
+    }
+
+    #medlemskab h3 {
+        font-size: 1.3vw;
+    }
+
+    #medlemskab h4 {
+        font-size: 1vw;
+    }
+
+    #medlemskab h2 {
+        font-size: 1.6vw;
     }
 }
