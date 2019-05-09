@@ -28,19 +28,21 @@ header {
 .sociale_media {
     display: flex;
     width: 10%;
+    margin-left: -150px;
+
 
 }
 
 .sociale_media img {
-    height: 2vw;
-    width: 2vw;
+    height: 4vw;
+    width: 4vw;
     display: flex;
 
 }
 
 .facebook img {
-    height: 2.2vw;
-    width: 2.2vw;
+    height: 4.4vw;
+    width: 4.4vw;
 
 }
 
@@ -130,13 +132,7 @@ header nav a:active {
     right: 2vw;
 }
 
-#menu {
-    list-style-type: none;
-    transition: transform .3s;
-    transform-origin: top right;
-    background-color: #403f3d;
-    width: 100%;
-}
+
 
 .bar1,
 .bar2,
@@ -486,6 +482,34 @@ button:hover {
     #menu li {
         display: inline-block;
         font-size: 1rem;
+    }
+
+    #menu {
+        list-style-type: none;
+        transition: transform .3s;
+        transform-origin: top right;
+        background-color: #403f3d;
+        width: 100%;
+    }
+
+    .sociale_media {
+        display: flex;
+        width: 10%;
+        margin-left: 0px;
+
+    }
+
+    .sociale_media img {
+        height: 2vw;
+        width: 2vw;
+        display: flex;
+
+    }
+
+    .facebook img {
+        height: 2.2vw;
+        width: 2.2vw;
+
     }
 
     .knap a,
