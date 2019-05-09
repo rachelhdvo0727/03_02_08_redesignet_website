@@ -20,7 +20,7 @@ a:link {
 header {
     background: #403f3d;
     width: 100%;
-    position: fixed;
+
     top: 0;
 
 }
@@ -83,6 +83,7 @@ nav .hidden {
 }
 
 
+
 nav a {
     padding: 0.2rem;
     margin: 0.4rem;
@@ -108,7 +109,7 @@ header nav a:link {
 
 /*visited*/
 header nav a:visited {
-    color: #24969a;
+    color: #5e8c88;
 }
 
 /* mouse over link */
@@ -165,6 +166,8 @@ header nav a:active {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+
+
 /*---------fonts------------*/
 }
 
@@ -197,24 +200,26 @@ h1 {
     font-family: 'Black Ops One', cursive;
     color: #24969a;
     font-size: 4vw;
+    color: #5e8c88;
+    font-size: 2rem;
 }
 
 #medlemskab h4 {
     font-family: 'Black Ops One', cursive;
-    color: #24969a;
+    color: #5e8c88;
     font-size: 2vw;
     text-align: left;
 }
 
 #medlemskab h2 {
     font-family: 'Black Ops One', cursive;
-    color: #24969a;
+    color: #5e8c88;
     font-size: 3.2vw;
 }
 
 #medlemskab h3 {
     font-family: 'Black Ops One', cursive;
-    color: #24969a;
+    color: #5e8c88;
     font-size: 2.5vw;
 }
 
@@ -237,11 +242,13 @@ footer p {
     font-family: 'Lato', sans-serif;
     font-size: 2.9vw;
     color: #F2F2F2;
+    align-self: center;
 }
 
 .knap_sprite {
     padding: 1vw;
     text-align: center;
+
 }
 
 .knap {
@@ -274,6 +281,7 @@ footer p {
     background-color: #F2F2F2;
     border-radius: 1vw;
     padding: 0.8vw;
+
 }
 
 /*------------------------Indhold----------------------------*/
@@ -281,10 +289,9 @@ footer p {
 #splash {
     width: 100vw;
     height: 20vw;
-    margin-top: 8vw;
     background-size: cover;
     background-position: 30% 0%;
-    background-image: url(images/splash_2.png);
+    background-image: url(images/crossfit_splashbillede.jpg);
 }
 
 
@@ -306,11 +313,13 @@ footer p {
     flex-grow: 2;
     margin: 2.5vw;
     padding: 1vw;
+    margin-top: -3vw;
 }
 
 #forside .video {
     flex-basis: 150px;
     flex-grow: 1;
+    margin-top: 5vw;
 }
 
 #forside .video_container {
@@ -346,17 +355,7 @@ button {
     border-radius: 3px;
 }
 
-button2 {
-    background: rgba(0, 0, 0, .5);
-    border: 0;
-    color: #EEE;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
-    border-radius: 3px;
 
-}
 
 button:hover {
     cursor: pointer;
@@ -479,9 +478,7 @@ button:hover {
 
 /*-----------store skærme------------*/
 @media only screen and (min-width: 600px) {
-    #splash {
-        margin-top: 3.5vw;
-    }
+    #splash {}
 
     #menuknap {
         display: none;
@@ -564,7 +561,7 @@ button:hover {
     .pos6,
     .pos7 {
         margin-top: 2vw;
-        margin-left: 8vw;
+        margin-left: 6vw;
     }
 
     footer h6 {
