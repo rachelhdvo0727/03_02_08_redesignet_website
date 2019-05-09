@@ -20,7 +20,7 @@ a:link {
 header {
     background: #403f3d;
     width: 100%;
-    position: fixed;
+
     top: 0;
 
 }
@@ -81,6 +81,7 @@ nav .hidden {
     justify-content: center;
     margin-left: 100px;
 }
+
 
 
 nav a {
@@ -270,6 +271,7 @@ footer p {
     background-color: #F2F2F2;
     border-radius: 1vw;
     padding: 0.8vw;
+
 }
 
 /*------------------------Indhold----------------------------*/
@@ -277,7 +279,6 @@ footer p {
 #splash {
     width: 100vw;
     height: 20vw;
-    margin-top: 8vw;
     background-size: cover;
     background-position: 30% 0%;
     background-image: url(images/splash_2.png);
@@ -302,11 +303,13 @@ footer p {
     flex-grow: 2;
     margin: 2.5vw;
     padding: 1vw;
+    margin-top: -3vw;
 }
 
 #forside .video {
     flex-basis: 150px;
     flex-grow: 1;
+    margin-top: 5vw;
 }
 
 #forside .video_container {
@@ -467,9 +470,7 @@ button:hover {
 
 /*-----------store skærme------------*/
 @media only screen and (min-width: 600px) {
-    #splash {
-        margin-top: 3.5vw;
-    }
+    #splash {}
 
     #menuknap {
         display: none;
@@ -552,7 +553,7 @@ button:hover {
     .pos6,
     .pos7 {
         margin-top: 2vw;
-        margin-left: 8vw;
+        margin-left: 6vw;
     }
 
     footer h6 {
