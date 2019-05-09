@@ -145,13 +145,14 @@ header nav a:active {
 p {
     font-family: 'Lato', sans-serif;
     color: #010d00;
-    font-size: 1rem;
+    font-size: 1vw;
 }
 
 #medlemskab p {
     font-family: 'Lato', sans-serif;
     color: #F2F2F2;
-    font-size: 1rem;
+    text-align: left;
+    font-size: 2.3vw;
 }
 
 h1 {
@@ -160,16 +161,23 @@ h1 {
     font-size: 2rem;
 }
 
-h2 {
+#medlemskab h4 {
     font-family: 'Black Ops One', cursive;
     color: #5e8c88;
-    font-size: 1.5rem;
+    font-size: 2vw;
+    text-align: left;
 }
 
-h3 {
+#medlemskab h2 {
     font-family: 'Black Ops One', cursive;
     color: #5e8c88;
-    font-size: 1.2rem;
+    font-size: 3.2vw;
+}
+
+#medlemskab h3 {
+    font-family: 'Black Ops One', cursive;
+    color: #5e8c88;
+    font-size: 2.5vw;
 }
 
 footer h6 {
@@ -218,17 +226,16 @@ footer p {
 }
 
 .buyknap_sprite {
-    padding: 0.5vw;
+    padding: 0.2vw;
     text-align: center;
 }
 
 .buy_knap {
     width: 10vw;
     height: 3vw;
-    position: absolute;
     background-color: #F2F2F2;
     border-radius: 1vw;
-    padding: 1vw;
+    padding: 0.8vw;
 }
 
 /*------------------------Indhold----------------------------*/
@@ -321,47 +328,6 @@ button:hover {
     width: 60px;
 }
 
-/*---------------Medlemskab-------------*/
-
-#medlemskab {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0.5rem;
-    margin: 3rem 2rem 3rem 2rem;
-}
-
-#medlemskab .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#medlemskab .container {
-    flex-flow: flex wrap;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.boks {
-    width: 40vw;
-    height: 50vw;
-    margin: 1.2vw;
-    background-color: #400101;
-    vertical-align: top;
-    padding-left: 8px;
-}
-
-.pos1,
-.pos2,
-.pos3,
-.pos4,
-.pos5,
-.pos6,
-.pos7 {
-    margin-top: 5vw;
-    margin-left: 14vw;
-}
 
 /*------------Om os-----------*/
 #omos {
@@ -383,6 +349,53 @@ button:hover {
     /*parent flex*/
     display: flex;
     justify-content: space-between;
+}
+
+/*---------------Medlemskab-------------*/
+
+#medlemskab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
+#medlemskab .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#medlemskab .container {
+    /*child flex
+    flex-grow: 1;
+    flex-basis: 50px;
+    /*parent flex*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boks {
+    width: 43vw;
+    height: 43vw;
+    margin: 1.5vw;
+    background-color: #400101;
+    vertical-align: top;
+    padding: 2vw;
+
+}
+
+.pos1,
+.pos2,
+.pos3,
+.pos4,
+.pos5,
+.pos6,
+.pos7 {
+    margin-top: 0vw;
+    margin-left: 15vw;
 }
 
 /*-----------store skærme------------*/
@@ -421,16 +434,15 @@ button:hover {
 
     .buy_knap {
         width: 8vw;
-        height: 2vw;
+        height: 1vw;
     }
 
     .boks {
         display: inline-block;
-        width: 20vw;
-        height: 20vw;
+        width: 25vw;
+        height: 25vw;
         margin: 1vw;
         vertical-align: top;
-        padding-left: 8px;
     }
 
     .pos1,
@@ -440,8 +452,8 @@ button:hover {
     .pos5,
     .pos6,
     .pos7 {
-        margin-top: 0vw;
-        margin-left: 6vw;
+        margin-top: 6vw;
+        margin-left: 8vw;
     }
 
     footer h6 {
@@ -450,5 +462,21 @@ button:hover {
 
     footer p {
         font-size: 0.8rem;
+    }
+
+    #medlemskab p {
+        font-size: 1vw;
+    }
+
+    #medlemskab h3 {
+        font-size: 1.3vw;
+    }
+
+    #medlemskab h4 {
+        font-size: 1vw;
+    }
+
+    #medlemskab h2 {
+        font-size: 1.6vw;
     }
 }
