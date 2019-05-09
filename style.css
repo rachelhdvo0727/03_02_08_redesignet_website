@@ -190,7 +190,13 @@ header nav a:active {
 h1 {
     font-family: 'Black Ops One', cursive;
     color: #24969a;
-    font-size: 2rem;
+    font-size: 5vw;
+}
+
+#traening h2 {
+    font-family: 'Black Ops One', cursive;
+    color: #24969a;
+    font-size: 4vw;
 }
 
 #medlemskab h4 {
@@ -372,8 +378,7 @@ button:hover {
     margin: 3rem 2rem 3rem 2rem;
 }
 
-#omos .txt,
-    {
+#omos .txt {
     margin: 2vw;
     padding: 1vw;
 }
@@ -449,7 +454,6 @@ button:hover {
     background-color: #400101;
     vertical-align: top;
     padding: 2vw;
-
 }
 
 .pos1,
@@ -462,6 +466,16 @@ button:hover {
     margin-top: 0vw;
     margin-left: 15vw;
 }
+
+/*-----------træning------------*/
+
+#traening {
+    flex-flow: flex wrap;
+    padding: 0.5rem;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
+
 
 /*-----------store skærme------------*/
 @media only screen and (min-width: 600px) {
@@ -559,6 +573,14 @@ button:hover {
 
     footer p {
         font-size: 0.8rem;
+    }
+
+    #traening h1 {
+        font-size: 3vw;
+    }
+
+    #traening h2 {
+        font-size: 2vw;
     }
 
     #omos p,
