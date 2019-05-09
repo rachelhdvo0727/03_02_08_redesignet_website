@@ -257,7 +257,6 @@ footer p {
 
 .buy_knap {
     width: 10vw;
-    height: 3vw;
     background-color: #F2F2F2;
     border-radius: 1vw;
     padding: 0.8vw;
@@ -552,7 +551,10 @@ button:hover {
 
     .buy_knap {
         width: 8vw;
-        height: 1vw;
+    }
+
+    .buy_knap a {
+        font-size: 1.3vw;
     }
 
     .boks {
