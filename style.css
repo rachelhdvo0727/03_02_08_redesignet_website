@@ -148,6 +148,18 @@ h1 {
     font-size: 2rem;
 }
 
+h2 {
+    font-family: 'Black Ops One', cursive;
+    color: #5e8c88;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: 'Black Ops One', cursive;
+    color: #5e8c88;
+    font-size: 1.2rem;
+}
+
 footer h6 {
     font-family: 'Lato', sans-serif;
     color: #F2F2F2;
@@ -253,6 +265,18 @@ button {
     border-radius: 3px;
 }
 
+button2 {
+    background: rgba(0, 0, 0, .5);
+    border: 0;
+    color: #EEE;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
+
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -271,23 +295,37 @@ button:hover {
     flex-flow: flex wrap;
     padding: 0.5rem;
     margin: 3rem 2rem 3rem 2rem;
+
+
 }
 
 #medlemskab .sectionwrapper {
     flex-flow: flex wrap;
 }
 
-#container {
-    flex-flow: flex wrap;
+#medlemskab .container2 {
+    display: flex;
     justify-content: center;
+}
+
+#medlemskab h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#medlemskab p {
+    color: white;
 }
 
 .boks {
     display: inline-block;
     width: 20vw;
-    height: 15vw;
+    height: 20vw;
     margin: 1.2vw;
     background-color: #400101;
+    vertical-align: top;
+    padding-left: 8px;
+    text-align: center;
 }
 
 
