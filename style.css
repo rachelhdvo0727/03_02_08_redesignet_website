@@ -1,7 +1,6 @@
 body {
     background-color: #F2F2F2;
     margin: 0 auto;
-    font-size: 62.5%;
 }
 
 img {
@@ -180,7 +179,8 @@ header nav a:active {
     font-size: 2.3vw;
 }
 
-h1 {
+h1,
+h2 {
     font-family: 'Black Ops One', cursive;
     color: #24969a;
     font-size: 5vw;
@@ -190,8 +190,6 @@ h1 {
     font-family: 'Black Ops One', cursive;
     color: #24969a;
     font-size: 4vw;
-    color: #5e8c88;
-    font-size: 2rem;
 }
 
 #medlemskab h4 {
@@ -236,9 +234,8 @@ footer p {
 }
 
 .knap_sprite {
-    padding: 1vw;
+    padding: 0.2vw;
     text-align: center;
-
 }
 
 .knap {
@@ -373,7 +370,13 @@ button:hover {
     font-size: 2.2vw;
 }
 
-.profil p {
+#omos h1,
+#omos h2 {
+    text-align: center;
+}
+
+.profil p,
+.profil ul {
     font-family: 'Lato', sans-serif;
     color: #F2F2F2;
     font-size: 2.2vw;
@@ -395,26 +398,27 @@ button:hover {
 }
 
 #omos .bottom {
-    text-align: center;
-    margin: 3vw;
+    margin: 2.5vw;
     padding: 0.8vw;
     /*child flex*/
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 250px;
     /*parent flex*/
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    /*white-space: nowrap;*/
 }
 
 #omos .profil {
     width: 45vw;
-    height: 60vw;
+    height: 50vw;
     margin: 1.5vw;
     background-color: #400101;
-    opacity: 5;
-    vertical-align: top;
     padding: 2vw;
+    text-overflow: clip;
+    flex: 0 0 auto;
 }
 
 /*---------------Medlemskab-------------*/
@@ -474,8 +478,6 @@ button:hover {
 
 /*-----------store skærme------------*/
 @media only screen and (min-width: 600px) {
-    #splash {}
-
     #menuknap {
         display: none;
         background-color: #403f3d;
@@ -521,7 +523,7 @@ button:hover {
 
     .knap a,
     .buy_knap a {
-        font-size: 1rem;
+        font-size: 0.5vw;
     }
 
     .knap_sprite {
@@ -568,12 +570,10 @@ button:hover {
         font-size: 0.8rem;
     }
 
-    h1 {
-        font-size: 2.5vw;
-    }
-
+    h1,
+    h2,
     #traening h1 {
-        font-size: 3vw;
+        font-size: 2.6vw;
     }
 
     #traening h2 {
@@ -581,7 +581,8 @@ button:hover {
     }
 
     #omos p,
-    #forside p {
+    #forside p,
+    #omos ul {
         font-size: 1.3vw;
     }
 
