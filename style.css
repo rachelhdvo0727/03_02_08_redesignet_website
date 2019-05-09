@@ -173,7 +173,7 @@ footer p {
     font-size: 0.7rem;
 }
 
-/*---------knap------------*/
+/*---------knapper------------*/
 
 .knap a {
     font-family: 'Lato', sans-serif;
@@ -200,8 +200,28 @@ footer p {
     color: brown;
 }
 
+.buy_knap a {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.9vw;
+    color: #400101;
+    text-decoration: none;
+}
+
+.buyknap_sprite {
+    padding: 1vw;
+    text-align: center;
+}
+
+.buy_knap {
+    width: 16vw;
+    height: 6vw;
+    background-color: #F2F2F2;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+
 /*------------------------Indhold----------------------------*/
-/*---------------Forside-------------*/
+
 #splash {
     width: 100vw;
     height: 20vw;
@@ -209,13 +229,13 @@ footer p {
     background-image: url(images/splashbillede.png);
 }
 
-#forside,
-#omos {
+#forside {
     flex-flow: flex wrap;
     padding: 0.5rem;
     margin: 3rem 2rem 3rem 2rem;
 }
 
+/*---------------Forside-------------*/
 #forside .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -296,8 +316,6 @@ button:hover {
     flex-flow: flex wrap;
     padding: 0.5rem;
     margin: 3rem 2rem 3rem 2rem;
-
-
 }
 
 #medlemskab .sectionwrapper {
@@ -330,6 +348,27 @@ button:hover {
 }
 
 
+/*------------Om os-----------*/
+#omos {
+    flex-flow: flex wrap;
+    padding: 0.5rem;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
+#omos .sectionwrapper {
+    flex-flow: flex wrap;
+}
+
+#omos .top {
+    margin: 3vw;
+    padding: 0.5vw;
+    /*child flex*/
+    flex-grow: 1;
+    flex-basis: 300px;
+    /*parent flex*/
+    display: flex;
+    justify-content: space-between;
+}
 
 /*-----------store skærme------------*/
 @media only screen and (min-width: 600px) {
@@ -349,7 +388,8 @@ button:hover {
         font-size: 1rem;
     }
 
-    .knap a {
+    .knap a,
+    .buy_knap a {
         font-size: 1rem;
     }
 
@@ -361,6 +401,12 @@ button:hover {
         width: 8vw;
         height: 3vw;
         margin-left: 25vw;
+        padding: 0.2rem;
+    }
+
+    .buy_knap {
+        width: 8vw;
+        height: 3vw;
         padding: 0.2rem;
     }
 
