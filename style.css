@@ -209,7 +209,8 @@ footer p {
     background-image: url(images/splashbillede.png);
 }
 
-#forside {
+#forside,
+#omos {
     flex-flow: flex wrap;
     padding: 0.5rem;
     margin: 3rem 2rem 3rem 2rem;
