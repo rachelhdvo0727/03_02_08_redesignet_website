@@ -1,5 +1,5 @@
 body {
-    background-color: #f2e8d5;
+    background-color: #F2F2F2;
     margin: 0 auto;
     font-size: 62.5%;
 }
@@ -22,7 +22,6 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-
 
 }
 
@@ -75,9 +74,6 @@ footer {
 
 
 
-
-
-
 /*-------navigation menu---------*/
 
 nav .hidden {
@@ -112,7 +108,7 @@ header nav a:link {
 
 /*visited*/
 header nav a:visited {
-    color: #5e8c88;
+    color: #24969a;
 }
 
 /* mouse over link */
@@ -179,10 +175,11 @@ header nav a:active {
     font-size: 0.8rem;
 }
 
-p {
+#omos p,
+#forside p {
     font-family: 'Lato', sans-serif;
     color: #010d00;
-    font-size: 1vw;
+    font-size: 2.2vw;
 }
 
 #medlemskab p {
@@ -194,26 +191,26 @@ p {
 
 h1 {
     font-family: 'Black Ops One', cursive;
-    color: #5e8c88;
+    color: #24969a;
     font-size: 2rem;
 }
 
 #medlemskab h4 {
     font-family: 'Black Ops One', cursive;
-    color: #5e8c88;
+    color: #24969a;
     font-size: 2vw;
     text-align: left;
 }
 
 #medlemskab h2 {
     font-family: 'Black Ops One', cursive;
-    color: #5e8c88;
+    color: #24969a;
     font-size: 3.2vw;
 }
 
 #medlemskab h3 {
     font-family: 'Black Ops One', cursive;
-    color: #5e8c88;
+    color: #24969a;
     font-size: 2.5vw;
 }
 
@@ -280,9 +277,14 @@ footer p {
 #splash {
     width: 100vw;
     height: 20vw;
+    margin-top: 8vw;
     background-size: cover;
-    background-image: url(images/crossfit_splashbillede.jpg);
+    background-position: 30% 0%;
+    background-image: url(images/splash_2.png);
 }
+
+
+/*---------------Forside-------------*/
 
 #forside {
     flex-flow: flex wrap;
@@ -290,7 +292,6 @@ footer p {
     margin: 3rem 2rem 3rem 2rem;
 }
 
-/*---------------Forside-------------*/
 #forside .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -373,19 +374,48 @@ button:hover {
     margin: 3rem 2rem 3rem 2rem;
 }
 
+#omos .txt,
+    {
+    margin: 2vw;
+    padding: 1vw;
+}
+
 #omos .sectionwrapper {
     flex-flow: flex wrap;
 }
 
 #omos .top {
     margin: 3vw;
-    padding: 0.5vw;
+    padding: 0.8vw;
     /*child flex*/
     flex-grow: 1;
     flex-basis: 300px;
     /*parent flex*/
     display: flex;
     justify-content: space-between;
+}
+
+#omos .bottom {
+    text-align: center;
+    margin: 3vw;
+    padding: 0.8vw;
+    /*child flex*/
+    flex-grow: 1;
+    flex-basis: 300px;
+    /*parent flex*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#omos .profil {
+    width: 45vw;
+    height: 60vw;
+    margin: 1.5vw;
+    background-color: #400101;
+    opacity: 5;
+    vertical-align: top;
+    padding: 2vw;
 }
 
 /*---------------Medlemskab-------------*/
@@ -437,6 +467,9 @@ button:hover {
 
 /*-----------store skærme------------*/
 @media only screen and (min-width: 600px) {
+    #splash {
+        margin-top: 3.5vw;
+    }
 
     #menuknap {
         display: none;
@@ -528,6 +561,11 @@ button:hover {
 
     footer p {
         font-size: 0.8rem;
+    }
+
+    #omos p,
+    #forside p {
+        font-size: 1.3vw;
     }
 
     #medlemskab p {
