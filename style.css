@@ -413,8 +413,8 @@ button:hover {
 }
 
 .boks {
-    width: 43vw;
-    height: 43vw;
+    width: 40vw;
+    height: 40vw;
     margin: 1.5vw;
     background-color: #400101;
     vertical-align: top;
@@ -490,7 +490,7 @@ button:hover {
 
     .knap {
         width: 8vw;
-        height: 3vw;
+        height: 2vw;
         margin-left: 25vw;
         padding: 0.2rem;
     }
@@ -502,9 +502,10 @@ button:hover {
 
     .boks {
         display: inline-block;
-        width: 25vw;
-        height: 25vw;
-        margin: 1vw;
+        width: 20vw;
+        height: 20vw;
+        margin: 0.5vw;
+        padding: 1vw;
         vertical-align: top;
     }
 
@@ -515,7 +516,7 @@ button:hover {
     .pos5,
     .pos6,
     .pos7 {
-        margin-top: 6vw;
+        margin-top: 2vw;
         margin-left: 8vw;
     }
 
@@ -532,7 +533,7 @@ button:hover {
     }
 
     #medlemskab h3 {
-        font-size: 1.3vw;
+        font-size: 1.2vw;
     }
 
     #medlemskab h4 {
