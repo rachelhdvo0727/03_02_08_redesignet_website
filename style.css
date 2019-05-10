@@ -314,6 +314,7 @@ footer p {
     position: relative;
 }
 
+/*
 #forside .video_controls {
     position: absolute;
     bottom: 0;
@@ -334,6 +335,7 @@ footer p {
 .video_container:hover .video_controls {
     opacity: .9;
 }
+*/
 
 button {
     background: rgba(0, 0, 0, .5);
@@ -622,5 +624,35 @@ button:hover {
 
     #medlemskab h2 {
         font-size: 1.6vw;
+    }
+}
+
+@media only screen and (min-width: 401px) {
+    #forside {
+        width: 100vw;
+        height: 56.25vw;
+        background-position: 0% 0%;
+    }
+}
+
+
+@media only screen and (min-width: 700px) {
+    #forside .sectionwrapper {
+        flex-wrap: nowrap;
+    }
+}
+
+
+@media only screen and (min-width: 700px) {
+    #forside .sectionwrapper {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (orientation: landscape) {
+    #forside {
+        width: 100vw;
+        height: 56.25vw;
+        background-position: 0% 0%;
     }
 }
