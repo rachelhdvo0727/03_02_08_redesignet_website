@@ -20,7 +20,6 @@ header {
     background: #403f3d;
     width: 100%;
     top: 0;
-
 }
 
 .sociale_media {
@@ -496,6 +495,10 @@ button:hover {
 
 /*-----------store skærme------------*/
 @media only screen and (min-width: 600px) {
+    #splash {
+        background-position: 100%;
+    }
+
     #menuknap {
         display: none;
         background-color: #403f3d;
